@@ -1,5 +1,5 @@
 # Tesla-Clone App
-Serverless UI only react app. with no backend integration
+Serverless UI only react-native app. with no backend integration
 
 # What's this?
 
