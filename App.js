@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View  } from 'react-native';
-import CarItem from './components/CarItem/index.js';
-import StyledButton from './components/StyledButton/index.js';
+import { StyleSheet, View, Image  } from 'react-native';
+import CarsList from './components/CarsList';
+import Header from './components/Header';
 
 export default function App() {
   return (
     <View style={styles.container} >
-      <CarItem modelName="Tesla Model S" tagline="Order Online For" taglineCTA="Touchless Delivery" imageSrc={require('./assets/images/ModelS.jpeg')}/>
+<Header/>
+  <CarsList/>
     
     <StatusBar style="auto" />
     </View>
@@ -21,5 +22,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  teslaLogo:{
+    display:'fixed',
+    width:400
   }
+
 });
